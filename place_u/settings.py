@@ -23,13 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1am4u@6b0j4#&5k_13b2i(xm26%a00!9%198+$r@(!ji=6iik1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [
-    
-]
+ALLOWED_HOSTS = [*, '13.51.85.234']
 
-CSRF_TRUSTED_ORIGINS =[
+CSRF_TRUSTED_ORIGINS =['http://13.51.85.234', 'https://13.51.85.234'
 ]
 
 #Email automation
@@ -98,8 +96,8 @@ DATABASES = {
         'NAME': 'placement',  # Your database name
         'HOST': 'localhost',
         'PORT': '3306',
-        'USER': 'root',
-        'PASSWORD': '',  # No password
+        'USER': 'admin',
+        'PASSWORD': 'admin@',  # No password
     }
 }
 
